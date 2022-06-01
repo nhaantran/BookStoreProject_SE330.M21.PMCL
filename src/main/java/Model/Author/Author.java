@@ -12,6 +12,27 @@ import Model.Person;
  */
 public class Author extends Person{
     private int NumofProducts;
+
+    public Author() {
+        super();
+        this.NumofProducts = 0;
+    }
+    
+    public Author(int NumofProducts, String Name, String Email, String Phone, String DateofBirth, String Gender, String ID) {
+        super(Name, Email, Phone, DateofBirth, Gender, ID);
+        this.NumofProducts = NumofProducts;
+    }
+
+    public int getNumofProducts() {
+        return NumofProducts;
+    }
+
+    public void setNumofProducts(int NumofProducts) {
+        this.NumofProducts = NumofProducts;
+    }
+    
+
+    
     
     
 }

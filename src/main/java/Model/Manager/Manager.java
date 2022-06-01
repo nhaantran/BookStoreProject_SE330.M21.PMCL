@@ -12,4 +12,24 @@ import Model.Person;
  */
 public class Manager extends Person{
     private String RegisterDate;
+
+    public Manager(){
+        super();
+        this.RegisterDate = "";
+    }
+    
+    public Manager(String RegisterDate, String Name, String Email, String Phone, String DateofBirth, String Gender, String ID) {
+        super(Name, Email, Phone, DateofBirth, Gender, ID);
+        this.RegisterDate = RegisterDate;
+    }
+
+    public String getRegisterDate() {
+        return RegisterDate;
+    }
+
+    public void setRegisterDate(String RegisterDate) {
+        this.RegisterDate = RegisterDate;
+    }
+    
+    
 }

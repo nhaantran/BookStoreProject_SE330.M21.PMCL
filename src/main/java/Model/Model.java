@@ -10,5 +10,22 @@ package Model;
  */
 public abstract class Model {
     private String ID;
-    private String Name;
+
+    public Model() {
+        this.ID = "";
+    }
+
+    public Model(String ID) {
+        this.ID = ID;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+    
+    
 }

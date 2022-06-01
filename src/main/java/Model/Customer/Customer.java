@@ -12,4 +12,25 @@ import Model.Person;
  */
 public class Customer extends Person{
     private double Total;
+
+    public Customer() {
+        super();
+        this.Total = 0.0;
+    }
+
+    public Customer(double Total, String Name, String Email, String Phone, String DateofBirth, String Gender, String ID) {
+        super(Name, Email, Phone, DateofBirth, Gender, ID);
+        this.Total = Total;
+    }
+
+    public double getTotal() {
+        return Total;
+    }
+
+    public void setTotal(double Total) {
+        this.Total = Total;
+    }
+    
+    
+    
 }
