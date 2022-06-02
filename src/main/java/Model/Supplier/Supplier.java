@@ -4,18 +4,13 @@
  */
 package Model.Supplier;
 
-import Model.Person;
+import Model.Unit;
 
 /**
  *
  * @author nhaantran
  */
-public class Supplier extends Person{
-    
-    /**
-     * this.DateofBirth = "";
-     * this.Gender = "";
-     */
+public class Supplier extends Unit{
     
     private String Address;
     private int NumofProducts;
@@ -26,17 +21,12 @@ public class Supplier extends Person{
         this.NumofProducts = 0;
     }
 
-    public Supplier(String Address, int NumofProducts) {
+    public Supplier(String Address, int NumofProducts, String Email, String Phone, String ID) {
+        super(Email, Phone, ID);
         this.Address = Address;
         this.NumofProducts = NumofProducts;
     }
-
-    public Supplier(String Address, int NumofProducts, String Name, String Email, String Phone, String DateofBirth, String Gender, String ID) {
-        super(Name, Email, Phone, DateofBirth, Gender, ID);
-        this.Address = Address;
-        this.NumofProducts = NumofProducts;
-    }
-
+    
     public String getAddress() {
         return Address;
     }

@@ -112,7 +112,7 @@ public class Home extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jPanel11 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        tblsach = new javax.swing.JTable();
+        tblbook = new javax.swing.JTable();
         jPanel12 = new javax.swing.JPanel();
         cbbtest = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
@@ -122,13 +122,11 @@ public class Home extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         txtfinddelete = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
-        tplsachoption = new javax.swing.JTabbedPane();
+        tplbookoption = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
         jSeparator7 = new javax.swing.JSeparator();
         historypane = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        customerpane = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
         billpane = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         statisticpane = new javax.swing.JPanel();
@@ -140,7 +138,7 @@ public class Home extends javax.swing.JFrame {
         jSeparator8 = new javax.swing.JSeparator();
         jPanel13 = new javax.swing.JPanel();
         jScrollPane6 = new javax.swing.JScrollPane();
-        tblsach1 = new javax.swing.JTable();
+        tblsupplier = new javax.swing.JTable();
         jPanel14 = new javax.swing.JPanel();
         cbbtest1 = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
@@ -153,6 +151,26 @@ public class Home extends javax.swing.JFrame {
         tplsupplieroption = new javax.swing.JTabbedPane();
         jPanel15 = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
+        customerpane = new javax.swing.JPanel();
+        bookpanetitle2 = new javax.swing.JPanel();
+        lblkhotitle3 = new javax.swing.JLabel();
+        lblkhotitleview3 = new javax.swing.JLabel();
+        jSeparator11 = new javax.swing.JSeparator();
+        jPanel16 = new javax.swing.JPanel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        tblsach2 = new javax.swing.JTable();
+        jPanel17 = new javax.swing.JPanel();
+        cbbtest2 = new javax.swing.JComboBox<>();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
+        txtfinddelete2 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
+        tplsupplieroption1 = new javax.swing.JTabbedPane();
+        jPanel18 = new javax.swing.JPanel();
+        jSeparator13 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1500, 800));
@@ -1027,7 +1045,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
 
-        tblsach.setModel(new javax.swing.table.DefaultTableModel(
+        tblbook.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -1038,7 +1056,7 @@ public class Home extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane5.setViewportView(tblsach);
+        jScrollPane5.setViewportView(tblbook);
 
         jPanel12.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -1155,7 +1173,7 @@ public class Home extends javax.swing.JFrame {
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane5)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addComponent(tplsachoption, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tplbookoption, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1167,7 +1185,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tplsachoption)
+                    .addComponent(tplbookoption)
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1216,35 +1234,6 @@ public class Home extends javax.swing.JFrame {
             .addGroup(historypaneLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(911, Short.MAX_VALUE))
-        );
-
-        customerpane.setBackground(new java.awt.Color(246, 248, 250));
-
-        jPanel6.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1234, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 180, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout customerpaneLayout = new javax.swing.GroupLayout(customerpane);
-        customerpane.setLayout(customerpaneLayout);
-        customerpaneLayout.setHorizontalGroup(
-            customerpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        customerpaneLayout.setVerticalGroup(
-            customerpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(customerpaneLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(911, Short.MAX_VALUE))
         );
 
@@ -1303,7 +1292,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(statisticpaneLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1402, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         supplierpane.setBackground(new java.awt.Color(246, 248, 250));
@@ -1350,7 +1339,7 @@ public class Home extends javax.swing.JFrame {
 
         jPanel13.setBackground(new java.awt.Color(255, 255, 255));
 
-        tblsach1.setModel(new javax.swing.table.DefaultTableModel(
+        tblsupplier.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -1361,7 +1350,7 @@ public class Home extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane6.setViewportView(tblsach1);
+        jScrollPane6.setViewportView(tblsupplier);
 
         jPanel14.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -1513,6 +1502,213 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        customerpane.setBackground(new java.awt.Color(246, 248, 250));
+
+        bookpanetitle2.setBackground(new java.awt.Color(0, 153, 255));
+
+        lblkhotitle3.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
+        lblkhotitle3.setForeground(new java.awt.Color(255, 255, 255));
+        lblkhotitle3.setText("Customer");
+
+        lblkhotitleview3.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
+        lblkhotitleview3.setForeground(new java.awt.Color(255, 255, 255));
+        lblkhotitleview3.setText("Insert / Update / Delete Customer");
+
+        jSeparator11.setForeground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout bookpanetitle2Layout = new javax.swing.GroupLayout(bookpanetitle2);
+        bookpanetitle2.setLayout(bookpanetitle2Layout);
+        bookpanetitle2Layout.setHorizontalGroup(
+            bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bookpanetitle2Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bookpanetitle2Layout.createSequentialGroup()
+                        .addComponent(lblkhotitle3)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(bookpanetitle2Layout.createSequentialGroup()
+                        .addComponent(lblkhotitleview3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator11, javax.swing.GroupLayout.DEFAULT_SIZE, 846, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        bookpanetitle2Layout.setVerticalGroup(
+            bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bookpanetitle2Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(lblkhotitle3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addGroup(bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblkhotitleview3)
+                    .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42))
+        );
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+
+        tblsach2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane7.setViewportView(tblsach2);
+
+        jPanel17.setBackground(new java.awt.Color(204, 204, 204));
+
+        cbbtest2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Name" }));
+
+        jLabel16.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel16.setText("Find/ Delete Supplier");
+
+        jLabel20.setFont(new java.awt.Font("Candara", 0, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel20.setText("Find/ Delete by:");
+
+        jButton8.setBackground(new java.awt.Color(0, 153, 255));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Find Supplier");
+
+        jLabel21.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel21.setText("Input ID or Name: ");
+
+        txtfinddelete2.setForeground(new java.awt.Color(153, 153, 153));
+        txtfinddelete2.setText("Enter ID or Name");
+        txtfinddelete2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtfinddelete2FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtfinddelete2FocusLost(evt);
+            }
+        });
+
+        jButton9.setBackground(new java.awt.Color(0, 153, 255));
+        jButton9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("Delete Supplier");
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator12))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addGap(18, 18, 18)
+                                .addComponent(cbbtest2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel17Layout.createSequentialGroup()
+                                .addComponent(jLabel21)
+                                .addGap(16, 16, 16)
+                                .addComponent(txtfinddelete2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel16))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbbtest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel20))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(txtfinddelete2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton8)
+                    .addComponent(jButton9))
+                .addGap(30, 30, 30))
+        );
+
+        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
+
+        jSeparator13.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
+        jPanel18.setLayout(jPanel18Layout);
+        jPanel18Layout.setHorizontalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel18Layout.setVerticalGroup(
+            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel18Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator13))
+        );
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane7)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addComponent(tplsupplieroption1, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tplsupplieroption1)
+                    .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 1163, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout customerpaneLayout = new javax.swing.GroupLayout(customerpane);
+        customerpane.setLayout(customerpaneLayout);
+        customerpaneLayout.setHorizontalGroup(
+            customerpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(bookpanetitle2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        customerpaneLayout.setVerticalGroup(
+            customerpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(customerpaneLayout.createSequentialGroup()
+                .addGap(47, 47, 47)
+                .addComponent(bookpanetitle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout datapaneLayout = new javax.swing.GroupLayout(datapane);
         datapane.setLayout(datapaneLayout);
         datapaneLayout.setHorizontalGroup(
@@ -1526,8 +1722,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(historypane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(bookpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(customerpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         datapaneLayout.setVerticalGroup(
@@ -1543,9 +1738,9 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(datapaneLayout.createSequentialGroup()
                     .addComponent(bookpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-            .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(customerpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(customerpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout screenLayout = new javax.swing.GroupLayout(screen);
@@ -1807,17 +2002,30 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtfinddelete1FocusLost
 
+    private void txtfinddelete2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtfinddelete2FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtfinddelete2FocusGained
+
+    private void txtfinddelete2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtfinddelete2FocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtfinddelete2FocusLost
+
     
-    private DefaultTableModel tblsachdata;
+    private DefaultTableModel tblbookdata;
+    private DefaultTableModel tblsupplierdata;
     
     private void inittable(){
-        tblsachdata = new DefaultTableModel();
-        tblsachdata.setColumnIdentifiers(new String[]{"ID","Name","Description","National","Publisher","Supplier",
+        tblbookdata = new DefaultTableModel();
+        tblbookdata.setColumnIdentifiers(new String[]{"ID","Name","Description","National","Publisher","Supplier",
         "BookCover", "Author", "Type", "YearofPublish", "NumPages", "Price"});
-        tblkho1.setModel(tblsachdata);
-        tblkho2.setModel(tblsachdata);
-        tblkho3.setModel(tblsachdata);
-        tblsach.setModel(tblsachdata);
+        tblkho1.setModel(tblbookdata);
+        tblkho2.setModel(tblbookdata);
+        tblkho3.setModel(tblbookdata);
+        tblbook.setModel(tblbookdata);
+        
+        tblsupplierdata = new DefaultTableModel();
+        tblsupplierdata.setColumnIdentifiers(new String[]{"ID","Name","Email","Address","NumofProducts"});
+        
     }
     
     private InsertBook insertBookTab;
@@ -1827,8 +2035,8 @@ public class Home extends javax.swing.JFrame {
     private void inittab(){
         insertBookTab = new InsertBook();
         updateBookTab = new UpdateBook();
-        tplsachoption.addTab("Insert", insertBookTab);
-        tplsachoption.addTab("Update", updateBookTab);
+        tplbookoption.addTab("Insert", insertBookTab);
+        tplbookoption.addTab("Update", updateBookTab);
         
         
         insertSupplierTab = new InsertSupplier();
@@ -1880,8 +2088,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel bookpane;
     private javax.swing.JPanel bookpanetitle;
     private javax.swing.JPanel bookpanetitle1;
+    private javax.swing.JPanel bookpanetitle2;
     private javax.swing.JComboBox<String> cbbtest;
     private javax.swing.JComboBox<String> cbbtest1;
+    private javax.swing.JComboBox<String> cbbtest2;
     private javax.swing.JPanel clickhoadon;
     private javax.swing.JPanel clickkhach;
     private javax.swing.JPanel clickkho;
@@ -1899,6 +2109,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1906,10 +2118,13 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -1928,10 +2143,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
+    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
@@ -1940,8 +2157,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -1963,9 +2184,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblkhotitle;
     private javax.swing.JLabel lblkhotitle1;
     private javax.swing.JLabel lblkhotitle2;
+    private javax.swing.JLabel lblkhotitle3;
     private javax.swing.JLabel lblkhotitleview;
     private javax.swing.JLabel lblkhotitleview1;
     private javax.swing.JLabel lblkhotitleview2;
+    private javax.swing.JLabel lblkhotitleview3;
     private javax.swing.JLabel lbllichsu;
     private javax.swing.JLabel lbllogout;
     private javax.swing.JLabel lblncc;
@@ -1984,14 +2207,17 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel statisticpane;
     private javax.swing.JPanel storagepane;
     private javax.swing.JPanel supplierpane;
+    private javax.swing.JTable tblbook;
     private javax.swing.JTable tblkho1;
     private javax.swing.JTable tblkho2;
     private javax.swing.JTable tblkho3;
-    private javax.swing.JTable tblsach;
-    private javax.swing.JTable tblsach1;
-    private javax.swing.JTabbedPane tplsachoption;
+    private javax.swing.JTable tblsach2;
+    private javax.swing.JTable tblsupplier;
+    private javax.swing.JTabbedPane tplbookoption;
     private javax.swing.JTabbedPane tplsupplieroption;
+    private javax.swing.JTabbedPane tplsupplieroption1;
     private javax.swing.JTextField txtfinddelete;
     private javax.swing.JTextField txtfinddelete1;
+    private javax.swing.JTextField txtfinddelete2;
     // End of variables declaration//GEN-END:variables
 }

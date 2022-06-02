@@ -8,28 +8,22 @@ package Model;
  *
  * @author nhaantran
  */
-public abstract class Person extends Model {
+public abstract class Person extends Unit {
     
     private String Name;
-    private String Email;
-    private String Phone;
     private String DateofBirth;
     private String Gender;
 
     public Person() {
         super();
         this.Name = "";
-        this.Email = "";
-        this.Phone = "";
         this.DateofBirth = "";
         this.Gender = "";
     }
-
-    public Person(String Name, String Email, String Phone, String DateofBirth, String Gender, String ID) {
-        super(ID);
+    
+    public Person(String Name, String DateofBirth, String Gender, String Email, String Phone, String ID) {
+        super(Email, Phone, ID);
         this.Name = Name;
-        this.Email = Email;
-        this.Phone = Phone;
         this.DateofBirth = DateofBirth;
         this.Gender = Gender;
     }
@@ -40,22 +34,6 @@ public abstract class Person extends Model {
 
     public void setName(String Name) {
         this.Name = Name;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String Email) {
-        this.Email = Email;
-    }
-
-    public String getPhone() {
-        return Phone;
-    }
-
-    public void setPhone(String Phone) {
-        this.Phone = Phone;
     }
 
     public String getDateofBirth() {
@@ -73,10 +51,6 @@ public abstract class Person extends Model {
     public void setGender(String Gender) {
         this.Gender = Gender;
     }
-
-    
-    
-    
     
     
 }
