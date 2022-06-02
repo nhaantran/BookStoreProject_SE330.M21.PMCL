@@ -2154,7 +2154,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jScrollPane6" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="tplsachoption1" min="-2" pref="826" max="-2" attributes="0"/>
+                              <Component id="tplsupplieroption" min="-2" pref="826" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanel15" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -2168,7 +2168,7 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="tplsachoption1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="tplsupplieroption" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jPanel14" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jPanel15" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -2364,7 +2364,7 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JTabbedPane" name="tplsachoption1">
+                    <Container class="javax.swing.JTabbedPane" name="tplsupplieroption">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
                     </Container>

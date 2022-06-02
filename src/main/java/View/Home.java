@@ -150,7 +150,7 @@ public class Home extends javax.swing.JFrame {
         jSeparator9 = new javax.swing.JSeparator();
         txtfinddelete1 = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
-        tplsachoption1 = new javax.swing.JTabbedPane();
+        tplsupplieroption = new javax.swing.JTabbedPane();
         jPanel15 = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
 
@@ -1478,7 +1478,7 @@ public class Home extends javax.swing.JFrame {
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane6)
             .addGroup(jPanel13Layout.createSequentialGroup()
-                .addComponent(tplsachoption1, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tplsupplieroption, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1490,7 +1490,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tplsachoption1)
+                    .addComponent(tplsupplieroption)
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1820,14 +1820,21 @@ public class Home extends javax.swing.JFrame {
         tblsach.setModel(tblsachdata);
     }
     
-    private InsertBook inserttab;
-    private UpdateBook updatetab;
-    
+    private InsertBook insertBookTab;
+    private UpdateBook updateBookTab;
+    private InsertSupplier insertSupplierTab;
+    private UpdateSupplier updateSupplierTab;
     private void inittab(){
-        inserttab = new InsertBook();
-        updatetab = new UpdateBook();
-        tplsachoption.addTab("Insert", inserttab);
-        tplsachoption.addTab("Update", updatetab);
+        insertBookTab = new InsertBook();
+        updateBookTab = new UpdateBook();
+        tplsachoption.addTab("Insert", insertBookTab);
+        tplsachoption.addTab("Update", updateBookTab);
+        
+        
+        insertSupplierTab = new InsertSupplier();
+        updateSupplierTab = new UpdateSupplier();
+        tplsupplieroption.addTab("Insert", insertSupplierTab);
+        tplsupplieroption.addTab("Update", updateSupplierTab);
     }
     
     /**
@@ -1983,7 +1990,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JTable tblsach;
     private javax.swing.JTable tblsach1;
     private javax.swing.JTabbedPane tplsachoption;
-    private javax.swing.JTabbedPane tplsachoption1;
+    private javax.swing.JTabbedPane tplsupplieroption;
     private javax.swing.JTextField txtfinddelete;
     private javax.swing.JTextField txtfinddelete1;
     // End of variables declaration//GEN-END:variables

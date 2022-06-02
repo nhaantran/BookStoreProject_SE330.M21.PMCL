@@ -32,9 +32,9 @@ public class UpdateBook extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         rdbtnname = new javax.swing.JRadioButton();
         rdbtnnational = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
+        rdbtnyear = new javax.swing.JRadioButton();
+        rdbtnnumpages = new javax.swing.JRadioButton();
+        rdbtnprice = new javax.swing.JRadioButton();
         txtid = new javax.swing.JTextField();
         txtname = new javax.swing.JTextField();
         txtnational = new javax.swing.JTextField();
@@ -42,18 +42,18 @@ public class UpdateBook extends javax.swing.JPanel {
         txtnumpages = new javax.swing.JTextField();
         txtprice = new javax.swing.JTextField();
         updatebookpane2 = new javax.swing.JPanel();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
-        jRadioButton9 = new javax.swing.JRadioButton();
-        jRadioButton10 = new javax.swing.JRadioButton();
+        rdbtnpublisher = new javax.swing.JRadioButton();
+        rdbtnsupplier = new javax.swing.JRadioButton();
+        rdbtnauthor = new javax.swing.JRadioButton();
+        rdbtnbookcover = new javax.swing.JRadioButton();
+        rdbtntype = new javax.swing.JRadioButton();
         cbbpublisher = new javax.swing.JComboBox<>();
         cbbsupplier = new javax.swing.JComboBox<>();
         cbbauthor = new javax.swing.JComboBox<>();
         cbbbookcover = new javax.swing.JComboBox<>();
         cbbtype = new javax.swing.JComboBox<>();
         updatebookpane3 = new javax.swing.JPanel();
-        jRadioButton11 = new javax.swing.JRadioButton();
+        rdbtndescription = new javax.swing.JRadioButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtdescription = new javax.swing.JTextArea();
         btnupdate = new javax.swing.JButton();
@@ -76,15 +76,35 @@ public class UpdateBook extends javax.swing.JPanel {
 
         rdbtnnational.setForeground(new java.awt.Color(0, 0, 0));
         rdbtnnational.setText("National");
+        rdbtnnational.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnnationalActionPerformed(evt);
+            }
+        });
 
-        jRadioButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton3.setText("Year");
+        rdbtnyear.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnyear.setText("Year");
+        rdbtnyear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnyearActionPerformed(evt);
+            }
+        });
 
-        jRadioButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton4.setText("NumPages");
+        rdbtnnumpages.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnnumpages.setText("NumPages");
+        rdbtnnumpages.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnnumpagesActionPerformed(evt);
+            }
+        });
 
-        jRadioButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton5.setText("Price");
+        rdbtnprice.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnprice.setText("Price");
+        rdbtnprice.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnpriceActionPerformed(evt);
+            }
+        });
 
         txtid.setForeground(new java.awt.Color(153, 153, 153));
         txtid.setText("Enter ID");
@@ -99,6 +119,7 @@ public class UpdateBook extends javax.swing.JPanel {
 
         txtname.setForeground(new java.awt.Color(153, 153, 153));
         txtname.setText("Enter Name");
+        txtname.setEnabled(false);
         txtname.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtnameFocusGained(evt);
@@ -110,6 +131,7 @@ public class UpdateBook extends javax.swing.JPanel {
 
         txtnational.setForeground(new java.awt.Color(153, 153, 153));
         txtnational.setText("Enter National");
+        txtnational.setEnabled(false);
         txtnational.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtnationalFocusGained(evt);
@@ -121,6 +143,7 @@ public class UpdateBook extends javax.swing.JPanel {
 
         txtyear.setForeground(new java.awt.Color(153, 153, 153));
         txtyear.setText("Enter Year");
+        txtyear.setEnabled(false);
         txtyear.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtyearFocusGained(evt);
@@ -132,6 +155,7 @@ public class UpdateBook extends javax.swing.JPanel {
 
         txtnumpages.setForeground(new java.awt.Color(153, 153, 153));
         txtnumpages.setText("Enter NumPages");
+        txtnumpages.setEnabled(false);
         txtnumpages.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtnumpagesFocusGained(evt);
@@ -143,6 +167,7 @@ public class UpdateBook extends javax.swing.JPanel {
 
         txtprice.setForeground(new java.awt.Color(153, 153, 153));
         txtprice.setText("Enter Price");
+        txtprice.setEnabled(false);
         txtprice.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtpriceFocusGained(evt);
@@ -159,9 +184,9 @@ public class UpdateBook extends javax.swing.JPanel {
             .addGroup(updatebookpane1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(updatebookpane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jRadioButton3)
+                    .addComponent(rdbtnnumpages)
+                    .addComponent(rdbtnprice)
+                    .addComponent(rdbtnyear)
                     .addComponent(rdbtnnational)
                     .addComponent(rdbtnname)
                     .addComponent(jLabel1))
@@ -192,45 +217,75 @@ public class UpdateBook extends javax.swing.JPanel {
                     .addComponent(txtnational, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton3)
+                    .addComponent(rdbtnyear)
                     .addComponent(txtyear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton4)
+                    .addComponent(rdbtnnumpages)
                     .addComponent(txtnumpages, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton5)
+                    .addComponent(rdbtnprice)
                     .addComponent(txtprice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         updatebookpane2.setBackground(new java.awt.Color(255, 255, 255));
 
-        jRadioButton6.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton6.setText("Publisher");
+        rdbtnpublisher.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnpublisher.setText("Publisher");
+        rdbtnpublisher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnpublisherActionPerformed(evt);
+            }
+        });
 
-        jRadioButton7.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton7.setText("Supplier");
+        rdbtnsupplier.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnsupplier.setText("Supplier");
+        rdbtnsupplier.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnsupplierActionPerformed(evt);
+            }
+        });
 
-        jRadioButton8.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton8.setText("Author");
+        rdbtnauthor.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnauthor.setText("Author");
+        rdbtnauthor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnauthorActionPerformed(evt);
+            }
+        });
 
-        jRadioButton9.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton9.setText("BookCover");
+        rdbtnbookcover.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtnbookcover.setText("BookCover");
+        rdbtnbookcover.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtnbookcoverActionPerformed(evt);
+            }
+        });
 
-        jRadioButton10.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton10.setText("Type");
+        rdbtntype.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtntype.setText("Type");
+        rdbtntype.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtntypeActionPerformed(evt);
+            }
+        });
 
         cbbpublisher.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbbpublisher.setEnabled(false);
 
         cbbsupplier.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbbsupplier.setEnabled(false);
 
         cbbauthor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbbauthor.setEnabled(false);
 
         cbbbookcover.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbbbookcover.setEnabled(false);
 
         cbbtype.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbbtype.setEnabled(false);
 
         javax.swing.GroupLayout updatebookpane2Layout = new javax.swing.GroupLayout(updatebookpane2);
         updatebookpane2.setLayout(updatebookpane2Layout);
@@ -240,23 +295,23 @@ public class UpdateBook extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(updatebookpane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(updatebookpane2Layout.createSequentialGroup()
-                        .addComponent(jRadioButton6)
+                        .addComponent(rdbtnpublisher)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbbpublisher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(updatebookpane2Layout.createSequentialGroup()
-                        .addComponent(jRadioButton10)
+                        .addComponent(rdbtntype)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbbtype, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(updatebookpane2Layout.createSequentialGroup()
-                        .addComponent(jRadioButton7)
+                        .addComponent(rdbtnsupplier)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbbsupplier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(updatebookpane2Layout.createSequentialGroup()
-                        .addComponent(jRadioButton8)
+                        .addComponent(rdbtnauthor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cbbauthor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(updatebookpane2Layout.createSequentialGroup()
-                        .addComponent(jRadioButton9)
+                        .addComponent(rdbtnbookcover)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                         .addComponent(cbbbookcover, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -266,35 +321,41 @@ public class UpdateBook extends javax.swing.JPanel {
             .addGroup(updatebookpane2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(updatebookpane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton6)
+                    .addComponent(rdbtnpublisher)
                     .addComponent(cbbpublisher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton7)
+                    .addComponent(rdbtnsupplier)
                     .addComponent(cbbsupplier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton8)
+                    .addComponent(rdbtnauthor)
                     .addComponent(cbbauthor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton9)
+                    .addComponent(rdbtnbookcover)
                     .addComponent(cbbbookcover, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(updatebookpane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton10)
+                    .addComponent(rdbtntype)
                     .addComponent(cbbtype, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         updatebookpane3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jRadioButton11.setForeground(new java.awt.Color(0, 0, 0));
-        jRadioButton11.setText("Description");
+        rdbtndescription.setForeground(new java.awt.Color(0, 0, 0));
+        rdbtndescription.setText("Description");
+        rdbtndescription.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbtndescriptionActionPerformed(evt);
+            }
+        });
 
         txtdescription.setColumns(20);
         txtdescription.setLineWrap(true);
         txtdescription.setRows(5);
+        txtdescription.setEnabled(false);
         jScrollPane1.setViewportView(txtdescription);
 
         btnupdate.setBackground(new java.awt.Color(0, 153, 255));
@@ -311,7 +372,7 @@ public class UpdateBook extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(updatebookpane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(updatebookpane3Layout.createSequentialGroup()
-                        .addComponent(jRadioButton11)
+                        .addComponent(rdbtndescription)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, updatebookpane3Layout.createSequentialGroup()
@@ -325,7 +386,7 @@ public class UpdateBook extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(updatebookpane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton11))
+                    .addComponent(rdbtndescription))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnupdate)
                 .addContainerGap(23, Short.MAX_VALUE))
@@ -455,7 +516,102 @@ public class UpdateBook extends javax.swing.JPanel {
 
     private void rdbtnnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnnameActionPerformed
         // TODO add your handling code here:
+        if(txtname.isEnabled()){
+            txtname.setEnabled(false);
+        } else{
+            txtname.setEnabled(true);
+        }
     }//GEN-LAST:event_rdbtnnameActionPerformed
+
+    private void rdbtnnationalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnnationalActionPerformed
+        // TODO add your handling code here:
+        if(txtnational.isEnabled()){
+            txtnational.setEnabled(false);
+        } else{
+            txtnational.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnnationalActionPerformed
+
+    private void rdbtnyearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnyearActionPerformed
+        // TODO add your handling code here:
+        if(txtyear.isEnabled()){
+            txtyear.setEnabled(false);
+        } else{
+            txtyear.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnyearActionPerformed
+
+    private void rdbtnnumpagesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnnumpagesActionPerformed
+        // TODO add your handling code here:
+        if(txtnumpages.isEnabled()){
+            txtnumpages.setEnabled(false);
+        } else{
+            txtnumpages.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnnumpagesActionPerformed
+
+    private void rdbtnpriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnpriceActionPerformed
+        // TODO add your handling code here:
+        if(txtprice.isEnabled()){
+            txtprice.setEnabled(false);
+        } else{
+            txtprice.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnpriceActionPerformed
+
+    private void rdbtnpublisherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnpublisherActionPerformed
+        // TODO add your handling code here:
+        if(cbbpublisher.isEnabled()){
+            cbbpublisher.setEnabled(false);
+        } else{
+            cbbpublisher.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnpublisherActionPerformed
+
+    private void rdbtnsupplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnsupplierActionPerformed
+        // TODO add your handling code here:
+        if(cbbsupplier.isEnabled()){
+            cbbsupplier.setEnabled(false);
+        } else{
+            cbbsupplier.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnsupplierActionPerformed
+
+    private void rdbtnauthorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnauthorActionPerformed
+        // TODO add your handling code here:
+        if(cbbauthor.isEnabled()){
+            cbbauthor.setEnabled(false);
+        } else{
+            cbbauthor.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnauthorActionPerformed
+
+    private void rdbtnbookcoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtnbookcoverActionPerformed
+        // TODO add your handling code here:
+        if(cbbbookcover.isEnabled()){
+            cbbbookcover.setEnabled(false);
+        } else{
+            cbbbookcover.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtnbookcoverActionPerformed
+
+    private void rdbtntypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtntypeActionPerformed
+        // TODO add your handling code here:
+        if(cbbtype.isEnabled()){
+            cbbtype.setEnabled(false);
+        } else{
+            cbbtype.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtntypeActionPerformed
+
+    private void rdbtndescriptionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbtndescriptionActionPerformed
+        // TODO add your handling code here:
+        if(txtdescription.isEnabled()){
+            txtdescription.setEnabled(false);
+        } else{
+            txtdescription.setEnabled(true);
+        }
+    }//GEN-LAST:event_rdbtndescriptionActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -466,18 +622,18 @@ public class UpdateBook extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cbbsupplier;
     private javax.swing.JComboBox<String> cbbtype;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton11;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JRadioButton rdbtnauthor;
+    private javax.swing.JRadioButton rdbtnbookcover;
+    private javax.swing.JRadioButton rdbtndescription;
     private javax.swing.JRadioButton rdbtnname;
     private javax.swing.JRadioButton rdbtnnational;
+    private javax.swing.JRadioButton rdbtnnumpages;
+    private javax.swing.JRadioButton rdbtnprice;
+    private javax.swing.JRadioButton rdbtnpublisher;
+    private javax.swing.JRadioButton rdbtnsupplier;
+    private javax.swing.JRadioButton rdbtntype;
+    private javax.swing.JRadioButton rdbtnyear;
     private javax.swing.JTextArea txtdescription;
     private javax.swing.JTextField txtid;
     private javax.swing.JTextField txtname;
