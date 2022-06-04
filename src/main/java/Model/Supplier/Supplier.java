@@ -12,26 +12,20 @@ import Model.Unit;
  */
 public class Supplier extends Unit{
     
-    private String Address;
     private int NumofProducts;
+    private String Address;
+    
 
     public Supplier() {
         super();
-        this.Address = "";
         this.NumofProducts = 0;
+        this.Address = "";
+        
     }
 
-    public Supplier(String Address, int NumofProducts, String Email, String Phone, String ID) {
-        super(Email, Phone, ID);
-        this.Address = Address;
+    public Supplier(int NumofProducts, String Address, String Name, String Email, String Phone, String ID) {
+        super(Name, Email, Phone, ID);
         this.NumofProducts = NumofProducts;
-    }
-    
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String Address) {
         this.Address = Address;
     }
 
@@ -42,7 +36,16 @@ public class Supplier extends Unit{
     public void setNumofProducts(int NumofProducts) {
         this.NumofProducts = NumofProducts;
     }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        this.Address = Address;
+    }
     
+      
     
     
     

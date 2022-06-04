@@ -9,20 +9,35 @@ package Model;
  * @author nhaantran
  */
 public abstract class Unit extends Model{
+    private String Name;
     private String Email;
     private String Phone;
-
+    
+    
+    
     public Unit(){
         super();
+        this.Name = "";
         this.Email = "";
         this.Phone = "";
     }
-    
-    public Unit(String Email, String Phone, String ID) {
+
+    public Unit(String Name, String Email, String Phone, String ID) {
         super(ID);
+        this.Name = Name;
         this.Email = Email;
         this.Phone = Phone;
     }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+  
 
     public String getEmail() {
         return Email;

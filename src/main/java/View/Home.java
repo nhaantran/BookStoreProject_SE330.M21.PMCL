@@ -19,12 +19,13 @@ public class Home extends javax.swing.JFrame {
     /**
      * Creates new form LoginScreen
      */
+    @SuppressWarnings("empty-statement")
     public Home() {
         initComponents();
         inittable();
         inittab();;
         setpanevisible(storagepane);
-        setclickColor(clickkho);
+        setclickColor(clickstorage);
     }
 
     /**
@@ -41,31 +42,27 @@ public class Home extends javax.swing.JFrame {
         menustorage = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         lblstorage = new javax.swing.JLabel();
-        clickkho = new javax.swing.JPanel();
+        clickstorage = new javax.swing.JPanel();
         menubook = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         lblsach = new javax.swing.JLabel();
-        clicksach = new javax.swing.JPanel();
-        menuhistory = new javax.swing.JPanel();
-        lbllichsu = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        clicklichsu = new javax.swing.JPanel();
+        clickbook = new javax.swing.JPanel();
         menusupplier = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         lblncc = new javax.swing.JLabel();
-        clickncc = new javax.swing.JPanel();
+        clicksupplier = new javax.swing.JPanel();
         menucustomer = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         lblkhach = new javax.swing.JLabel();
-        clickkhach = new javax.swing.JPanel();
+        clickcustomer = new javax.swing.JPanel();
         menustatistic = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         lblthongke = new javax.swing.JLabel();
-        clickthongke = new javax.swing.JPanel();
+        clickstatistic = new javax.swing.JPanel();
         menubill = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         lblhoadon = new javax.swing.JLabel();
-        clickhoadon = new javax.swing.JPanel();
+        clickbill = new javax.swing.JPanel();
         lblbookstore = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         lblbookstoreicon = new javax.swing.JLabel();
@@ -125,14 +122,12 @@ public class Home extends javax.swing.JFrame {
         tplbookoption = new javax.swing.JTabbedPane();
         jPanel3 = new javax.swing.JPanel();
         jSeparator7 = new javax.swing.JSeparator();
-        historypane = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
         billpane = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         statisticpane = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         supplierpane = new javax.swing.JPanel();
-        bookpanetitle1 = new javax.swing.JPanel();
+        supplierpanetitle = new javax.swing.JPanel();
         lblkhotitle2 = new javax.swing.JLabel();
         lblkhotitleview2 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
@@ -141,35 +136,35 @@ public class Home extends javax.swing.JFrame {
         tblsupplier = new javax.swing.JTable();
         jPanel14 = new javax.swing.JPanel();
         cbbtest1 = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jSeparator9 = new javax.swing.JSeparator();
         txtfinddelete1 = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
         tplsupplieroption = new javax.swing.JTabbedPane();
-        jPanel15 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
         customerpane = new javax.swing.JPanel();
-        bookpanetitle2 = new javax.swing.JPanel();
+        customerpanetitle = new javax.swing.JPanel();
         lblkhotitle3 = new javax.swing.JLabel();
         lblkhotitleview3 = new javax.swing.JLabel();
         jSeparator11 = new javax.swing.JSeparator();
-        jPanel16 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
         jScrollPane7 = new javax.swing.JScrollPane();
-        tblsach2 = new javax.swing.JTable();
-        jPanel17 = new javax.swing.JPanel();
+        tblcustomer = new javax.swing.JTable();
+        jPanel16 = new javax.swing.JPanel();
         cbbtest2 = new javax.swing.JComboBox<>();
+        jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         txtfinddelete2 = new javax.swing.JTextField();
         jButton9 = new javax.swing.JButton();
-        tplsupplieroption1 = new javax.swing.JTabbedPane();
-        jPanel18 = new javax.swing.JPanel();
+        tplcustomeroption = new javax.swing.JTabbedPane();
+        jPanel5 = new javax.swing.JPanel();
         jSeparator13 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -202,16 +197,16 @@ public class Home extends javax.swing.JFrame {
         lblstorage.setForeground(new java.awt.Color(0, 0, 0));
         lblstorage.setText("Storage");
 
-        clickkho.setBackground(new java.awt.Color(246, 248, 250));
+        clickstorage.setBackground(new java.awt.Color(246, 248, 250));
 
-        javax.swing.GroupLayout clickkhoLayout = new javax.swing.GroupLayout(clickkho);
-        clickkho.setLayout(clickkhoLayout);
-        clickkhoLayout.setHorizontalGroup(
-            clickkhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout clickstorageLayout = new javax.swing.GroupLayout(clickstorage);
+        clickstorage.setLayout(clickstorageLayout);
+        clickstorageLayout.setHorizontalGroup(
+            clickstorageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        clickkhoLayout.setVerticalGroup(
-            clickkhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        clickstorageLayout.setVerticalGroup(
+            clickstorageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -225,7 +220,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblstorage)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
-                .addComponent(clickkho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(clickstorage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         menustorageLayout.setVerticalGroup(
             menustorageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,7 +230,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(lblstorage))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(clickkho, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(clickstorage, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         sidepane.add(menustorage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 112, 260, 60));
@@ -260,16 +255,16 @@ public class Home extends javax.swing.JFrame {
         lblsach.setForeground(new java.awt.Color(0, 0, 0));
         lblsach.setText("Book");
 
-        clicksach.setBackground(new java.awt.Color(246, 248, 250));
+        clickbook.setBackground(new java.awt.Color(246, 248, 250));
 
-        javax.swing.GroupLayout clicksachLayout = new javax.swing.GroupLayout(clicksach);
-        clicksach.setLayout(clicksachLayout);
-        clicksachLayout.setHorizontalGroup(
-            clicksachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout clickbookLayout = new javax.swing.GroupLayout(clickbook);
+        clickbook.setLayout(clickbookLayout);
+        clickbookLayout.setHorizontalGroup(
+            clickbookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        clicksachLayout.setVerticalGroup(
-            clicksachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        clickbookLayout.setVerticalGroup(
+            clickbookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -283,7 +278,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblsach)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
-                .addComponent(clicksach, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(clickbook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         menubookLayout.setVerticalGroup(
             menubookLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -298,69 +293,11 @@ public class Home extends javax.swing.JFrame {
                                 .addGap(22, 22, 22)
                                 .addComponent(lblsach)))
                         .addGap(0, 10, Short.MAX_VALUE))
-                    .addComponent(clicksach, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(clickbook, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         sidepane.add(menubook, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 260, -1));
-
-        menuhistory.setBackground(new java.awt.Color(246, 248, 250));
-        menuhistory.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        menuhistory.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                menuhistoryMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                menuhistoryMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                menuhistoryMouseExited(evt);
-            }
-        });
-
-        lbllichsu.setFont(new java.awt.Font("Candara", 0, 18)); // NOI18N
-        lbllichsu.setForeground(new java.awt.Color(0, 0, 0));
-        lbllichsu.setText("History");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/historyblack.png"))); // NOI18N
-
-        clicklichsu.setBackground(new java.awt.Color(246, 248, 250));
-
-        javax.swing.GroupLayout clicklichsuLayout = new javax.swing.GroupLayout(clicklichsu);
-        clicklichsu.setLayout(clicklichsuLayout);
-        clicklichsuLayout.setHorizontalGroup(
-            clicklichsuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
-        );
-        clicklichsuLayout.setVerticalGroup(
-            clicklichsuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout menuhistoryLayout = new javax.swing.GroupLayout(menuhistory);
-        menuhistory.setLayout(menuhistoryLayout);
-        menuhistoryLayout.setHorizontalGroup(
-            menuhistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuhistoryLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbllichsu)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
-                .addComponent(clicklichsu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        menuhistoryLayout.setVerticalGroup(
-            menuhistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuhistoryLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(menuhistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(lbllichsu))
-                .addContainerGap(16, Short.MAX_VALUE))
-            .addComponent(clicklichsu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        sidepane.add(menuhistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 260, 60));
 
         menusupplier.setBackground(new java.awt.Color(246, 248, 250));
         menusupplier.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -382,16 +319,16 @@ public class Home extends javax.swing.JFrame {
         lblncc.setForeground(new java.awt.Color(0, 0, 0));
         lblncc.setText("Supplier");
 
-        clickncc.setBackground(new java.awt.Color(246, 248, 250));
+        clicksupplier.setBackground(new java.awt.Color(246, 248, 250));
 
-        javax.swing.GroupLayout clicknccLayout = new javax.swing.GroupLayout(clickncc);
-        clickncc.setLayout(clicknccLayout);
-        clicknccLayout.setHorizontalGroup(
-            clicknccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout clicksupplierLayout = new javax.swing.GroupLayout(clicksupplier);
+        clicksupplier.setLayout(clicksupplierLayout);
+        clicksupplierLayout.setHorizontalGroup(
+            clicksupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        clicknccLayout.setVerticalGroup(
-            clicknccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        clicksupplierLayout.setVerticalGroup(
+            clicksupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -405,7 +342,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblncc)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
-                .addComponent(clickncc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(clicksupplier, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         menusupplierLayout.setVerticalGroup(
             menusupplierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -418,10 +355,10 @@ public class Home extends javax.swing.JFrame {
                         .addGap(22, 22, 22)
                         .addComponent(lblncc)))
                 .addContainerGap(16, Short.MAX_VALUE))
-            .addComponent(clickncc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(clicksupplier, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        sidepane.add(menusupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 260, -1));
+        sidepane.add(menusupplier, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 260, -1));
 
         menucustomer.setBackground(new java.awt.Color(246, 248, 250));
         menucustomer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -443,16 +380,16 @@ public class Home extends javax.swing.JFrame {
         lblkhach.setForeground(new java.awt.Color(0, 0, 0));
         lblkhach.setText("Customer");
 
-        clickkhach.setBackground(new java.awt.Color(246, 248, 250));
+        clickcustomer.setBackground(new java.awt.Color(246, 248, 250));
 
-        javax.swing.GroupLayout clickkhachLayout = new javax.swing.GroupLayout(clickkhach);
-        clickkhach.setLayout(clickkhachLayout);
-        clickkhachLayout.setHorizontalGroup(
-            clickkhachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout clickcustomerLayout = new javax.swing.GroupLayout(clickcustomer);
+        clickcustomer.setLayout(clickcustomerLayout);
+        clickcustomerLayout.setHorizontalGroup(
+            clickcustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        clickkhachLayout.setVerticalGroup(
-            clickkhachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        clickcustomerLayout.setVerticalGroup(
+            clickcustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -466,7 +403,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblkhach)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
-                .addComponent(clickkhach, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(clickcustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         menucustomerLayout.setVerticalGroup(
             menucustomerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -479,10 +416,10 @@ public class Home extends javax.swing.JFrame {
                         .addGap(22, 22, 22)
                         .addComponent(lblkhach)))
                 .addContainerGap(16, Short.MAX_VALUE))
-            .addComponent(clickkhach, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(clickcustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        sidepane.add(menucustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 260, -1));
+        sidepane.add(menucustomer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 260, -1));
 
         menustatistic.setBackground(new java.awt.Color(246, 248, 250));
         menustatistic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -504,16 +441,16 @@ public class Home extends javax.swing.JFrame {
         lblthongke.setForeground(new java.awt.Color(0, 0, 0));
         lblthongke.setText("Statistic");
 
-        clickthongke.setBackground(new java.awt.Color(246, 248, 250));
+        clickstatistic.setBackground(new java.awt.Color(246, 248, 250));
 
-        javax.swing.GroupLayout clickthongkeLayout = new javax.swing.GroupLayout(clickthongke);
-        clickthongke.setLayout(clickthongkeLayout);
-        clickthongkeLayout.setHorizontalGroup(
-            clickthongkeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout clickstatisticLayout = new javax.swing.GroupLayout(clickstatistic);
+        clickstatistic.setLayout(clickstatisticLayout);
+        clickstatisticLayout.setHorizontalGroup(
+            clickstatisticLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        clickthongkeLayout.setVerticalGroup(
-            clickthongkeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        clickstatisticLayout.setVerticalGroup(
+            clickstatisticLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -526,8 +463,8 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblthongke)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
-                .addComponent(clickthongke, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                .addComponent(clickstatistic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         menustatisticLayout.setVerticalGroup(
             menustatisticLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -540,10 +477,10 @@ public class Home extends javax.swing.JFrame {
                         .addGap(22, 22, 22)
                         .addComponent(lblthongke)))
                 .addContainerGap(16, Short.MAX_VALUE))
-            .addComponent(clickthongke, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(clickstatistic, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        sidepane.add(menustatistic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 260, -1));
+        sidepane.add(menustatistic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 260, -1));
 
         menubill.setBackground(new java.awt.Color(246, 248, 250));
         menubill.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -565,16 +502,16 @@ public class Home extends javax.swing.JFrame {
         lblhoadon.setForeground(new java.awt.Color(0, 0, 0));
         lblhoadon.setText("Bill");
 
-        clickhoadon.setBackground(new java.awt.Color(246, 248, 250));
+        clickbill.setBackground(new java.awt.Color(246, 248, 250));
 
-        javax.swing.GroupLayout clickhoadonLayout = new javax.swing.GroupLayout(clickhoadon);
-        clickhoadon.setLayout(clickhoadonLayout);
-        clickhoadonLayout.setHorizontalGroup(
-            clickhoadonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout clickbillLayout = new javax.swing.GroupLayout(clickbill);
+        clickbill.setLayout(clickbillLayout);
+        clickbillLayout.setHorizontalGroup(
+            clickbillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 8, Short.MAX_VALUE)
         );
-        clickhoadonLayout.setVerticalGroup(
-            clickhoadonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        clickbillLayout.setVerticalGroup(
+            clickbillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -588,7 +525,7 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblhoadon)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
-                .addComponent(clickhoadon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(clickbill, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         menubillLayout.setVerticalGroup(
             menubillLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -601,10 +538,10 @@ public class Home extends javax.swing.JFrame {
                         .addGap(22, 22, 22)
                         .addComponent(lblhoadon)))
                 .addContainerGap(16, Short.MAX_VALUE))
-            .addComponent(clickhoadon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(clickbill, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        sidepane.add(menubill, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 410, 260, -1));
+        sidepane.add(menubill, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 260, -1));
 
         lblbookstore.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         lblbookstore.setForeground(new java.awt.Color(0, 153, 255));
@@ -1208,35 +1145,6 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        historypane.setBackground(new java.awt.Color(204, 204, 255));
-
-        jPanel5.setBackground(new java.awt.Color(0, 153, 255));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1234, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 180, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout historypaneLayout = new javax.swing.GroupLayout(historypane);
-        historypane.setLayout(historypaneLayout);
-        historypaneLayout.setHorizontalGroup(
-            historypaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        historypaneLayout.setVerticalGroup(
-            historypaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(historypaneLayout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(911, Short.MAX_VALUE))
-        );
-
         billpane.setBackground(new java.awt.Color(255, 255, 0));
 
         jPanel7.setBackground(new java.awt.Color(0, 153, 255));
@@ -1297,7 +1205,7 @@ public class Home extends javax.swing.JFrame {
 
         supplierpane.setBackground(new java.awt.Color(246, 248, 250));
 
-        bookpanetitle1.setBackground(new java.awt.Color(0, 153, 255));
+        supplierpanetitle.setBackground(new java.awt.Color(0, 153, 255));
 
         lblkhotitle2.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
         lblkhotitle2.setForeground(new java.awt.Color(255, 255, 255));
@@ -1305,33 +1213,33 @@ public class Home extends javax.swing.JFrame {
 
         lblkhotitleview2.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
         lblkhotitleview2.setForeground(new java.awt.Color(255, 255, 255));
-        lblkhotitleview2.setText("Insert / Update / Delete Supplier");
+        lblkhotitleview2.setText("Insert / Update / Delete Supplier ");
 
         jSeparator8.setForeground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout bookpanetitle1Layout = new javax.swing.GroupLayout(bookpanetitle1);
-        bookpanetitle1.setLayout(bookpanetitle1Layout);
-        bookpanetitle1Layout.setHorizontalGroup(
-            bookpanetitle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bookpanetitle1Layout.createSequentialGroup()
+        javax.swing.GroupLayout supplierpanetitleLayout = new javax.swing.GroupLayout(supplierpanetitle);
+        supplierpanetitle.setLayout(supplierpanetitleLayout);
+        supplierpanetitleLayout.setHorizontalGroup(
+            supplierpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(supplierpanetitleLayout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addGroup(bookpanetitle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bookpanetitle1Layout.createSequentialGroup()
+                .addGroup(supplierpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(supplierpanetitleLayout.createSequentialGroup()
                         .addComponent(lblkhotitle2)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(bookpanetitle1Layout.createSequentialGroup()
+                    .addGroup(supplierpanetitleLayout.createSequentialGroup()
                         .addComponent(lblkhotitleview2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator8, javax.swing.GroupLayout.DEFAULT_SIZE, 861, Short.MAX_VALUE)))
+                        .addComponent(jSeparator8, javax.swing.GroupLayout.DEFAULT_SIZE, 855, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        bookpanetitle1Layout.setVerticalGroup(
-            bookpanetitle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bookpanetitle1Layout.createSequentialGroup()
+        supplierpanetitleLayout.setVerticalGroup(
+            supplierpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(supplierpanetitleLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(lblkhotitle2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
-                .addGroup(bookpanetitle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(supplierpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblkhotitleview2)
                     .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42))
@@ -1356,21 +1264,21 @@ public class Home extends javax.swing.JFrame {
 
         cbbtest1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Name" }));
 
-        jLabel10.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel10.setText("Find/ Delete Supplier");
+        jLabel2.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("Find/ Delete Supplier");
 
-        jLabel12.setFont(new java.awt.Font("Candara", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel12.setText("Find/ Delete by:");
+        jLabel10.setFont(new java.awt.Font("Candara", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("Find/ Delete by:");
 
         jButton6.setBackground(new java.awt.Color(0, 153, 255));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Find Supplier");
 
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel14.setText("Input ID or Name: ");
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel12.setText("Input ID or Name: ");
 
         txtfinddelete1.setForeground(new java.awt.Color(153, 153, 153));
         txtfinddelete1.setText("Enter ID or Name");
@@ -1400,17 +1308,17 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
+                        .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator9))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel14Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
+                                .addComponent(jLabel10)
                                 .addGap(18, 18, 18)
                                 .addComponent(cbbtest1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel14Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
+                                .addComponent(jLabel12)
                                 .addGap(16, 16, 16)
                                 .addComponent(txtfinddelete1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -1422,17 +1330,17 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addComponent(jLabel10))
+                        .addComponent(jLabel2))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
                         .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbbtest1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
+                    .addComponent(jLabel10))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
+                    .addComponent(jLabel12)
                     .addComponent(txtfinddelete1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1441,22 +1349,22 @@ public class Home extends javax.swing.JFrame {
                 .addGap(30, 30, 30))
         );
 
-        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jSeparator10.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
                 .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel15Layout.createSequentialGroup()
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jSeparator10))
         );
@@ -1469,7 +1377,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addComponent(tplsupplieroption, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1481,7 +1389,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tplsupplieroption)
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 1163, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -1490,21 +1398,21 @@ public class Home extends javax.swing.JFrame {
         supplierpane.setLayout(supplierpaneLayout);
         supplierpaneLayout.setHorizontalGroup(
             supplierpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bookpanetitle1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(supplierpanetitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         supplierpaneLayout.setVerticalGroup(
             supplierpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(supplierpaneLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
-                .addComponent(bookpanetitle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(supplierpanetitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         customerpane.setBackground(new java.awt.Color(246, 248, 250));
 
-        bookpanetitle2.setBackground(new java.awt.Color(0, 153, 255));
+        customerpanetitle.setBackground(new java.awt.Color(0, 153, 255));
 
         lblkhotitle3.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
         lblkhotitle3.setForeground(new java.awt.Color(255, 255, 255));
@@ -1512,41 +1420,41 @@ public class Home extends javax.swing.JFrame {
 
         lblkhotitleview3.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
         lblkhotitleview3.setForeground(new java.awt.Color(255, 255, 255));
-        lblkhotitleview3.setText("Insert / Update / Delete Customer");
+        lblkhotitleview3.setText("Insert / Update / Delete Cusomer");
 
         jSeparator11.setForeground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout bookpanetitle2Layout = new javax.swing.GroupLayout(bookpanetitle2);
-        bookpanetitle2.setLayout(bookpanetitle2Layout);
-        bookpanetitle2Layout.setHorizontalGroup(
-            bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bookpanetitle2Layout.createSequentialGroup()
+        javax.swing.GroupLayout customerpanetitleLayout = new javax.swing.GroupLayout(customerpanetitle);
+        customerpanetitle.setLayout(customerpanetitleLayout);
+        customerpanetitleLayout.setHorizontalGroup(
+            customerpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(customerpanetitleLayout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addGroup(bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bookpanetitle2Layout.createSequentialGroup()
+                .addGroup(customerpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(customerpanetitleLayout.createSequentialGroup()
                         .addComponent(lblkhotitle3)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(bookpanetitle2Layout.createSequentialGroup()
+                    .addGroup(customerpanetitleLayout.createSequentialGroup()
                         .addComponent(lblkhotitleview3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator11, javax.swing.GroupLayout.DEFAULT_SIZE, 846, Short.MAX_VALUE)))
+                        .addComponent(jSeparator11, javax.swing.GroupLayout.DEFAULT_SIZE, 855, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        bookpanetitle2Layout.setVerticalGroup(
-            bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bookpanetitle2Layout.createSequentialGroup()
+        customerpanetitleLayout.setVerticalGroup(
+            customerpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(customerpanetitleLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(lblkhotitle3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
-                .addGroup(bookpanetitle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(customerpanetitleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblkhotitleview3)
                     .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42))
         );
 
-        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
 
-        tblsach2.setModel(new javax.swing.table.DefaultTableModel(
+        tblcustomer.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -1557,27 +1465,27 @@ public class Home extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane7.setViewportView(tblsach2);
+        jScrollPane7.setViewportView(tblcustomer);
 
-        jPanel17.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel16.setBackground(new java.awt.Color(204, 204, 204));
 
         cbbtest2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Name" }));
 
-        jLabel16.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel16.setText("Find/ Delete Supplier");
+        jLabel14.setFont(new java.awt.Font("Candara", 1, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setText("Find/ Delete Customer");
 
-        jLabel20.setFont(new java.awt.Font("Candara", 0, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel20.setText("Find/ Delete by:");
+        jLabel16.setFont(new java.awt.Font("Candara", 0, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel16.setText("Find/ Delete by:");
 
         jButton8.setBackground(new java.awt.Color(0, 153, 255));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Find Supplier");
+        jButton8.setText("Find Customer");
 
-        jLabel21.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel21.setText("Input ID or Name: ");
+        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel20.setText("Input ID or Name: ");
 
         txtfinddelete2.setForeground(new java.awt.Color(153, 153, 153));
         txtfinddelete2.setText("Enter ID or Name");
@@ -1593,102 +1501,102 @@ public class Home extends javax.swing.JFrame {
         jButton9.setBackground(new java.awt.Color(0, 153, 255));
         jButton9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Delete Supplier");
-
-        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
-        jPanel17.setLayout(jPanel17Layout);
-        jPanel17Layout.setHorizontalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator12))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel20)
-                                .addGap(18, 18, 18)
-                                .addComponent(cbbtest2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel17Layout.createSequentialGroup()
-                                .addComponent(jLabel21)
-                                .addGap(16, 16, 16)
-                                .addComponent(txtfinddelete2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        jPanel17Layout.setVerticalGroup(
-            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel17Layout.createSequentialGroup()
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel16))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(30, 30, 30)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbbtest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21)
-                    .addComponent(txtfinddelete2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9))
-                .addGap(30, 30, 30))
-        );
-
-        jPanel18.setBackground(new java.awt.Color(255, 255, 255));
-
-        jSeparator13.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel18Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
-                .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jSeparator13))
-        );
+        jButton9.setText("Delete Customer");
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane7)
             .addGroup(jPanel16Layout.createSequentialGroup()
-                .addComponent(tplsupplieroption1, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator12))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addComponent(jLabel16)
+                                .addGap(18, 18, 18)
+                                .addComponent(cbbtest2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addGap(16, 16, 16)
+                                .addComponent(txtfinddelete2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 80, Short.MAX_VALUE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton9)))
+                .addContainerGap())
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(jPanel16Layout.createSequentialGroup()
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tplsupplieroption1)
-                    .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel14))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbbtest2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(txtfinddelete2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton8)
+                    .addComponent(jButton9))
+                .addGap(30, 30, 30))
+        );
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+
+        jSeparator13.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jSeparator13))
+        );
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane7)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addComponent(tplcustomeroption, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tplcustomeroption)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 1163, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -1697,16 +1605,16 @@ public class Home extends javax.swing.JFrame {
         customerpane.setLayout(customerpaneLayout);
         customerpaneLayout.setHorizontalGroup(
             customerpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bookpanetitle2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(customerpanetitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         customerpaneLayout.setVerticalGroup(
             customerpaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerpaneLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
-                .addComponent(bookpanetitle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(customerpanetitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout datapaneLayout = new javax.swing.GroupLayout(datapane);
@@ -1718,8 +1626,6 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(storagepane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(billpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(historypane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(bookpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1733,14 +1639,13 @@ public class Home extends javax.swing.JFrame {
             .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(billpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(historypane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(datapaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(datapaneLayout.createSequentialGroup()
                     .addComponent(bookpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(customerpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(customerpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(supplierpane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(1635, 1635, 1635)))
         );
 
         javax.swing.GroupLayout screenLayout = new javax.swing.GroupLayout(screen);
@@ -1768,7 +1673,7 @@ public class Home extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(screen, javax.swing.GroupLayout.PREFERRED_SIZE, 1284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 345, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -1816,18 +1721,6 @@ public class Home extends javax.swing.JFrame {
         menuexitcolor(menubook);
         lblsetmenufontplain(lblsach);
     }//GEN-LAST:event_menubookMouseExited
-
-    private void menuhistoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuhistoryMouseEntered
-        // TODO add your handling code here:
-        menuentercolor(menuhistory);
-        lblsetmenufontbold(lbllichsu);
-    }//GEN-LAST:event_menuhistoryMouseEntered
-
-    private void menuhistoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuhistoryMouseExited
-        // TODO add your handling code here:
-        menuexitcolor(menuhistory);
-        lblsetmenufontplain(lbllichsu);
-    }//GEN-LAST:event_menuhistoryMouseExited
 
     private void menusupplierMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menusupplierMouseEntered
         // TODO add your handling code here:
@@ -1888,7 +1781,6 @@ public class Home extends javax.swing.JFrame {
     private void setpanevisible(JPanel panel){
         storagepane.setVisible(false);
         bookpane.setVisible(false);
-        historypane.setVisible(false);
         supplierpane.setVisible(false);
         customerpane.setVisible(false);
         billpane.setVisible(false);
@@ -1899,13 +1791,12 @@ public class Home extends javax.swing.JFrame {
     
    
     private void setclickColor(JPanel panel){
-        clickkho.setBackground(Color.WHITE);
-        clicksach.setBackground(Color.WHITE);
-        clicklichsu.setBackground(Color.WHITE);
-        clickncc.setBackground(Color.WHITE);
-        clickkhach.setBackground(Color.WHITE);
-        clickhoadon.setBackground(Color.WHITE);
-        clickthongke.setBackground(Color.WHITE);
+        clickstorage.setBackground(Color.WHITE);
+        clickbook.setBackground(Color.WHITE);
+        clicksupplier.setBackground(Color.WHITE);
+        clickcustomer.setBackground(Color.WHITE);
+        clickbill.setBackground(Color.WHITE);
+        clickstatistic.setBackground(Color.WHITE);
         
         panel.setBackground(new Color(0,0,0));
     }
@@ -1913,43 +1804,37 @@ public class Home extends javax.swing.JFrame {
     private void menustorageMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menustorageMouseClicked
         // TODO add your handling code here:
         setpanevisible(storagepane);
-        setclickColor(clickkho);
+        setclickColor(clickstorage);
     }//GEN-LAST:event_menustorageMouseClicked
 
     private void menubookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menubookMouseClicked
         // TODO add your handling code here:
         setpanevisible(bookpane);
-        setclickColor(clicksach);
+        setclickColor(clickbook);
     }//GEN-LAST:event_menubookMouseClicked
-
-    private void menuhistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuhistoryMouseClicked
-        // TODO add your handling code here:
-        setpanevisible(historypane);
-        setclickColor(clicklichsu);
-    }//GEN-LAST:event_menuhistoryMouseClicked
 
     private void menusupplierMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menusupplierMouseClicked
         // TODO add your handling code here:
         setpanevisible(supplierpane);
-        setclickColor(clickncc);
+        setclickColor(clicksupplier);
     }//GEN-LAST:event_menusupplierMouseClicked
 
     private void menucustomerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menucustomerMouseClicked
         // TODO add your handling code here:
         setpanevisible(customerpane);
-        setclickColor(clickkhach);
+        setclickColor(clickcustomer);
     }//GEN-LAST:event_menucustomerMouseClicked
 
     private void menubillMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menubillMouseClicked
         // TODO add your handling code here:
         setpanevisible(billpane);
-        setclickColor(clickhoadon);
+        setclickColor(clickbill);
     }//GEN-LAST:event_menubillMouseClicked
 
     private void menustatisticMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menustatisticMouseClicked
         // TODO add your handling code here:
         setpanevisible(statisticpane);
-        setclickColor(clickthongke);
+        setclickColor(clickstatistic);
     }//GEN-LAST:event_menustatisticMouseClicked
 
     private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
@@ -2013,6 +1898,7 @@ public class Home extends javax.swing.JFrame {
     
     private DefaultTableModel tblbookdata;
     private DefaultTableModel tblsupplierdata;
+    private DefaultTableModel tblcustomerdata;
     
     private void inittable(){
         tblbookdata = new DefaultTableModel();
@@ -2024,7 +1910,13 @@ public class Home extends javax.swing.JFrame {
         tblbook.setModel(tblbookdata);
         
         tblsupplierdata = new DefaultTableModel();
-        tblsupplierdata.setColumnIdentifiers(new String[]{"ID","Name","Email","Address","NumofProducts"});
+        tblsupplierdata.setColumnIdentifiers(new String[]{"ID","Name","Email","Phone","Address","NumofProducts"});
+        tblsupplier.setModel(tblsupplierdata);
+        
+        tblcustomerdata = new DefaultTableModel();
+        tblcustomerdata.setColumnIdentifiers(new String[]{"ID","Name","Email","Phone","DateofBirth","Gender","Total"});
+        tblcustomer.setModel(tblcustomerdata);
+        
         
     }
     
@@ -2032,6 +1924,9 @@ public class Home extends javax.swing.JFrame {
     private UpdateBook updateBookTab;
     private InsertSupplier insertSupplierTab;
     private UpdateSupplier updateSupplierTab;
+    private InsertCustomer insertCustomerTab;
+    private UpdateCustomer updateCustomerTab;
+    
     private void inittab(){
         insertBookTab = new InsertBook();
         updateBookTab = new UpdateBook();
@@ -2043,6 +1938,11 @@ public class Home extends javax.swing.JFrame {
         updateSupplierTab = new UpdateSupplier();
         tplsupplieroption.addTab("Insert", insertSupplierTab);
         tplsupplieroption.addTab("Update", updateSupplierTab);
+        
+        insertCustomerTab = new InsertCustomer();
+        updateCustomerTab = new UpdateCustomer();
+        tplcustomeroption.addTab("Insert", insertCustomerTab);
+        tplcustomeroption.addTab("Update", updateCustomerTab);
     }
     
     /**
@@ -2076,10 +1976,8 @@ public class Home extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Home().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Home().setVisible(true);
         });
     }
 
@@ -2087,21 +1985,18 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel billpane;
     private javax.swing.JPanel bookpane;
     private javax.swing.JPanel bookpanetitle;
-    private javax.swing.JPanel bookpanetitle1;
-    private javax.swing.JPanel bookpanetitle2;
     private javax.swing.JComboBox<String> cbbtest;
     private javax.swing.JComboBox<String> cbbtest1;
     private javax.swing.JComboBox<String> cbbtest2;
-    private javax.swing.JPanel clickhoadon;
-    private javax.swing.JPanel clickkhach;
-    private javax.swing.JPanel clickkho;
-    private javax.swing.JPanel clicklichsu;
-    private javax.swing.JPanel clickncc;
-    private javax.swing.JPanel clicksach;
-    private javax.swing.JPanel clickthongke;
+    private javax.swing.JPanel clickbill;
+    private javax.swing.JPanel clickbook;
+    private javax.swing.JPanel clickcustomer;
+    private javax.swing.JPanel clickstatistic;
+    private javax.swing.JPanel clickstorage;
+    private javax.swing.JPanel clicksupplier;
     private javax.swing.JPanel customerpane;
+    private javax.swing.JPanel customerpanetitle;
     private javax.swing.JPanel datapane;
-    private javax.swing.JPanel historypane;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -2124,7 +2019,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -2144,10 +2038,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -2189,7 +2082,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblkhotitleview1;
     private javax.swing.JLabel lblkhotitleview2;
     private javax.swing.JLabel lblkhotitleview3;
-    private javax.swing.JLabel lbllichsu;
     private javax.swing.JLabel lbllogout;
     private javax.swing.JLabel lblncc;
     private javax.swing.JLabel lblsach;
@@ -2198,7 +2090,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel menubill;
     private javax.swing.JPanel menubook;
     private javax.swing.JPanel menucustomer;
-    private javax.swing.JPanel menuhistory;
     private javax.swing.JPanel menustatistic;
     private javax.swing.JPanel menustorage;
     private javax.swing.JPanel menusupplier;
@@ -2207,15 +2098,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel statisticpane;
     private javax.swing.JPanel storagepane;
     private javax.swing.JPanel supplierpane;
+    private javax.swing.JPanel supplierpanetitle;
     private javax.swing.JTable tblbook;
+    private javax.swing.JTable tblcustomer;
     private javax.swing.JTable tblkho1;
     private javax.swing.JTable tblkho2;
     private javax.swing.JTable tblkho3;
-    private javax.swing.JTable tblsach2;
     private javax.swing.JTable tblsupplier;
     private javax.swing.JTabbedPane tplbookoption;
+    private javax.swing.JTabbedPane tplcustomeroption;
     private javax.swing.JTabbedPane tplsupplieroption;
-    private javax.swing.JTabbedPane tplsupplieroption1;
     private javax.swing.JTextField txtfinddelete;
     private javax.swing.JTextField txtfinddelete1;
     private javax.swing.JTextField txtfinddelete2;
